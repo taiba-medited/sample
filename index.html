@@ -1,11 +1,45 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello world</title>
+    <meta name="color-scheme" content="light" />
+    <title>Medi+｜医療ライター講座</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    Hello world
+    <main class="design-canvas" aria-label="Medi+ 医療ライター講座ランディングページ">
+      <div class="visual">
+        <img
+          class="landing-page"
+          src="assets/lp_medical_ver04.jpg"
+          alt="Medi+ 医療ライター講座のランディングページ"
+          width="525"
+          height="32768"
+        />
+        <button class="hotspot hotspot--hero" type="button" data-open-contact aria-label="無料説明会について相談する"></button>
+        <button class="hotspot hotspot--middle" type="button" data-open-contact aria-label="講座について無料で相談する"></button>
+        <button class="hotspot hotspot--last" type="button" data-open-contact aria-label="無料説明会に申し込む"></button>
+      </div>
+    </main>
+
+    <button class="floating-cta" type="button" data-open-contact>
+      <span>まずは気軽に</span>
+      無料で相談する
+    </button>
+
+    <dialog class="contact-dialog" id="contact-dialog">
+      <button class="dialog-close" type="button" data-close-contact aria-label="閉じる">×</button>
+      <p class="dialog-eyebrow">Medi+ 無料相談</p>
+      <h2>講座について相談する</h2>
+      <p>ご希望の方法をお選びください。送信や予約が発生する操作は行いません。</p>
+      <div class="dialog-actions">
+        <a href="mailto:?subject=Medi%2B%E8%AC%9B%E5%BA%A7%E3%81%AE%E7%84%A1%E6%96%99%E7%9B%B8%E8%AB%87">メールで相談する</a>
+        <button type="button" data-copy-url>このページのURLをコピー</button>
+      </div>
+      <p class="copy-status" aria-live="polite"></p>
+    </dialog>
+
+    <script src="script.js"></script>
   </body>
 </html>
